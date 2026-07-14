@@ -1,0 +1,21 @@
+{
+  "_comment": "Shared config -- read by config.py / watcher.py / cp_images.sh / sync_and_build_ok.sh",
+  "project_root": "/local/mnt/workspace/jiahduan/8845/Molokai_0713_01",
+  "downloads_src": "/local/mnt/workspace/jiahduan/8845/0521/downloads",
+  "workspace_base": "/local/mnt/workspace/jiahduan/8845",
+  "server_share_path": "/local/mnt/workspace/jiahduan/share_win_ai_bak",
+  "target": "alor",
+  "build_type": "debug",
+  "files_to_copy": [
+    "abl.elf",
+    "boot.img",
+    "dtbo.img",
+    "system.img",
+    "persist.img",
+    "userdata.img",
+    "full_update_ext4.zip"
+  ],
+  "lint_tools_dir": "/local/mnt2/workspace/jiahong/code/lint_tools",
+  "sync_cmd": "python {lint_tools_dir}/src/sync_scripts/sync.py . -t {target}_le -t alp -t video --skip-target-bins -p AU_LINUX_EMBEDDED_LE.PRODUCT.12.0_TARGET_ALL.01.312.312 --hotfixes 6884596/1 6881313/1 6892648/3 6943782/6 6950373/1 6943921/1 6849951/6 6958010/1 6979138/1 6978612/1 6834849/1 6906981/1",
+  "project_name": "Molokai"
+}
